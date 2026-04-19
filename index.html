@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional XPath Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #4facfe;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            background-color: #4facfe;
+            color: white;
+        }
+
+        .otp-btn {
+            background-color: #eee;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .small-title {
+            font-size: 13px;
+            color: #777;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Login Form</h2>
+
+    <!-- Username -->
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter Username">
+
+    <!-- Email -->
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter Email">
+
+    <!-- Buttons -->
+    <button class="btn login-btn" type="submit">Login</button>
+    <button class="btn otp-btn" type="button">Login with OTP</button>
+
+    <!-- Dynamic Section -->
+    <div class="section">
+        <div class="small-title">Dynamic Inputs (for contains demo)</div>
+
+        <input type="text" id="user_123" placeholder="Dynamic User 1">
+        <input type="text" id="user_456" placeholder="Dynamic User 2">
+    </div>
+
+</div>
+
+</body>
+</html>
